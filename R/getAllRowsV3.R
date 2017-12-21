@@ -12,8 +12,7 @@ getAllRowsV3 <- function(apiKey, datasetId){
   r <- GET(paste('https://api.numetric.com/v3/table/', datasetId, '/rows', sep = ""),
            add_headers("Authorization" = apiKey,
                        "Content-Type" = "application/json"),
-           body = body,
-           verbose()
+           body = body
   )
 
   response <- httr::content(r, as = "text") # Saves what was returned as raw text with all the encodings
