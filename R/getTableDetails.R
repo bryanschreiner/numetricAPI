@@ -8,8 +8,8 @@
 getTableDetails <- function(apiKey, tableId, fieldNames = T, textOrJSON = "JSON"){
   r <- GET(paste0("https://api.numetric.com/v3/table/", tableId),
            add_headers("Authorization" = apiKey,
-                       `Content-Type` = "application/json"),
-           verbose()
+                       `Content-Type` = "application/json")
+           #verbose()
   )
   if(textOrJSON == "JSON"){
     response <- httr::content(r, as = "text") %>% # Saves what was returned as raw text with all the encodings
