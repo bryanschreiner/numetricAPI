@@ -2,8 +2,8 @@ Package: numetricApi
 Type: Package
 Title: Functions to use Numetric's API
 Version: 0.1.0
-Author: Ronald Guymon <ron@numetric.com>
-Maintainer: Ronald Guymon <ron@numetric.com>
+Author: Ron Guymon <ron@numetric.com>
+Maintainer: Bryan Schreiner <bryanschreiner@numetric.com>
 Date: 05/30/2017
 Description: Functions for accessing and manipulating datasets and dashboards in
     Numetric. You need an API key and dataset Ids and dashboard Ids.
