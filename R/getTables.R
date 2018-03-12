@@ -5,8 +5,8 @@
 getTables <- function(apiKey){
   r <- GET("https://api.numetric.com/v3/table",
            add_headers("Authorization" = apiKey,
-                       "Content-Type" = "application/json"),
-           verbose()
+                       "Content-Type" = "application/json")
+           #verbose()
   )
   response <- httr::content(r, as = "text") # Saves what was returned as raw text with all the encodings
   response <- fromJSON(response) # Converts what was returned to a dataframe
