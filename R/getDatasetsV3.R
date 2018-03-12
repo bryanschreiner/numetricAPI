@@ -2,7 +2,7 @@
 #' @description Returns a table with meta-data about all the tables. This function uses the V3 version of the API.
 #' @param apiKey You can find the API key in the settings after logging into Numetric
 #' @export
-getTables <- function(apiKey){
+getDatasetsV3s <- function(apiKey){
   r <- GET("https://api.numetric.com/v3/dataset",
            add_headers("Authorization" = apiKey,
                        "Content-Type" = "application/json")
