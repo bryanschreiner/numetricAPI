@@ -61,8 +61,8 @@ createTable <- function(apiKey, numetricName, dataframeName, category = "New Dat
   r <- POST("https://api.numetric.com/v3/table",
             add_headers("Authorization" = apiKey,
                         "Content-Type" = "application/json"),
-            body = metadata,
-            verbose()
+            body = metadata
+            #verbose()
   )
   httr::content(r)
 }
